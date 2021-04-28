@@ -1,6 +1,5 @@
 <p align="center">
-  <a href="https://www.vecteezy.com/free-vector/icons" rel="noopener">
- <a href=""><img width=200px height=200px src="http://fern.fun/img/fern.png" alt="Project logo"></a>
+ <a href="https://www.vecteezy.com/free-vector/icons"><img width=200px height=200px src="http://fern.fun/img/fern.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Fern.fun</h3>
