@@ -91,7 +91,7 @@ Add additional notes about how to deploy this on a live system. -->
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [HTML]() 
+- [HTML](https://html.com) 
 - [SASS](https://sass-lang.com) 
 - [JS](https://www.javascript.com) 
 
