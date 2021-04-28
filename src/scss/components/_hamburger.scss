@@ -1,0 +1,60 @@
+@use '../abstracts' as *;
+
+$hb-width: 1.2em;
+$hb-height: 0.16em;
+$hb-colour: white;
+$line-spacing: 2 * $hb-height;
+
+.hamburger {
+	font-size: map-get($map: $font-size, $key: "500");
+	display: none;
+	// background-color: red;
+	width: 1.5em;
+	height: 1.5em;
+	position: fixed;
+	top: 0;
+	right: 0.5em;
+	z-index: 3;
+
+	.line {
+		width: $hb-width;
+		height: $hb-height;
+		background-color: white;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 0.1em;
+		transition: all 0.3s ease-in-out;
+	}
+	.line::before,
+	.line::after {
+		content: " ";
+		background-color: white;
+		position: absolute;
+		width: $hb-width;
+		height: $hb-height;
+		border-radius: 0.1em;
+		transition: all 0.3s ease-in-out;
+	}
+	.line::before {
+		top: $line-spacing;
+	}
+	.line::after {
+		top: -$line-spacing;
+	}
+}
+
+input[type="checkbox"]:checked + label .line {
+	background: transparent;
+}
+input[type="checkbox"]:checked + label .line::before,
+input[type="checkbox"]:checked + label .line::after {
+	top: 0;
+}
+input[type="checkbox"]:checked + label .line::before {
+	transform: rotate(45deg);
+}
+input[type="checkbox"]:checked + label .line::after {
+	transform: rotate(-45deg);
+}

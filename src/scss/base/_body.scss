@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+// CODE
+
+body {
+	background-color: map-get($colours, "main-bg");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box !important;
+}

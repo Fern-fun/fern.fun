@@ -1,0 +1,107 @@
+<DOCTYPE HTML>
+    <html lang="en">
+
+    <head>
+        <title>Fern.fun</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="/scss/index.scss" />
+        <meta charset="UTF-8">
+
+        <!-- Loading external libraries and scripts -->
+
+        <script src="https://kit.fontawesome.com/b77cf9dd97.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Loading scripts -->
+
+        <script src="/js/script.js"></script>
+        <script src="/js/components.js"></script>
+        <script src="/js/quoteLoading.js"></script>
+    </head>
+
+    <body>
+        <nav id="navbar">
+        </nav>
+
+        <div class="card-info">
+            <h1>Contact Us:</h1>
+        </div>
+
+        <section class="gallery" style="grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));">
+            <div class="contact__column">
+                <div class="form__row" style="margin-bottom: 2rem;">
+                    <h1>Reach out to Us:</h1>
+                </div>
+                <div class="wrapper">
+                    <a href="mailto:" class="link">
+                        <img src="../../img/github/gmail.svg" alt="gmail icon">
+                        Contact Us by email!
+                    </a>
+                    <a href="https://github.com/Fern-fun" class="link">
+                        <img src="../../img/github/github.svg" alt="github icon">
+                        Go see Our GitHub!</a>
+                    <a href="https://discord.gg/" class="link">
+                        <img src="../../img/github/discord.svg" alt="discord icon">
+                        Join Us on Our Discord server!</a>
+                    <a href="" class="link">
+                        <img src="../../img/github/twitter.svg" alt="twitter icon">
+                        Follow Us on Twitter</a>
+                </div>
+            </div>
+
+            <div class="contact__column">
+                <div class="form__row" style="margin-bottom: 2rem;">
+                    <h1>Random quote</h1>
+                </div>
+                <div class="quote__wrapper">
+                    <h1 class="quote" id="quote">Perfection is achieved not when there is nothing
+                        more to add, but rather when there is
+                        nothing more to take away.</h1>
+                    <h2 id="tilde"> ~ </h2>
+                    <h1 id="author">
+                        Antoine de Saint-Exupery
+                    </h1>
+                </div>
+            </div>
+
+            <div class="contact__column column__flex">
+                <form action="" class="form">
+                    <div class="form__row">
+                        <h1>Contact Us using this form:</h1>
+                    </div>
+
+                    <div class="form__row">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="form__input" placeholder="Here goes Your name">
+                    </div>
+                    <div class="form__row">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" class="form__input"
+                            placeholder="Here goes Your email address">
+                    </div>
+                    <div class="form__row">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" class="form__input"
+                            placeholder="Here goes the subject">
+                    </div>
+
+                    <div class="form__row">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" class="form__input" cols="30" rows="10"
+                            placeholder="Here goes Your message to Us"></textarea>
+                    </div>
+
+                    <div class="form__row">
+                        <input type="submit" value="Submit" class="form__input">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+
+        <footer id="footer">
+        </footer>
+    </body>
+
+    </html>

@@ -1,0 +1,36 @@
+@use '../abstracts/colours' as *;
+@use 'card' as *;
+
+.cookies {
+	@extend .card-info;
+	background-color: map-get($map: $colours, $key: "second-bg");
+	position: fixed;
+	margin: 0;
+	left: 3rem;
+	right: 3rem;
+	bottom: 2rem;
+	opacity: 0.97;
+	display: flex;
+}
+
+.cookies__content {
+	text-align: center;
+}
+
+.cookies__button {
+	all: unset;
+	display: block;
+	background-color: map-get($map: $colours, $key: "second-bg");
+	cursor: pointer;
+	padding: 0.5em 1.5em;
+	position: absolute;
+	right: 3rem;
+	top: 1.5rem;
+	box-shadow: 0 0 1em 0.3em map-get($map: $colours, $key: "shadow");
+	border-radius: 0.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.cookies__button:hover {
+	background-color: map-get($map: $colours, $key: "hover-bg");
+}

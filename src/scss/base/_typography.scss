@@ -1,0 +1,165 @@
+@use '../abstracts' as *;
+
+.link,
+.link:visited {
+	color: map-get($map: $colours, $key: "logo-gradient-end");
+	font-family: map-get($map: $fonts, $key: "main");
+	text-decoration: none;
+}
+
+nav {
+	.logo {
+		background: linear-gradient(
+			to right,
+			map-get($colours, "logo-gradient-start"),
+			map-get($colours, "logo-gradient-end")
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		animation: bg-gradient 10s infinite alternate linear;
+		background-position: left;
+		background-size: 1000%;
+		font-family: map-get($fonts, "main");
+		font-size: map-get($font-size, "500");
+		font-weight: map-get($font-weight, "500");
+		letter-spacing: 1.25px;
+	}
+	.nav__link {
+		font-family: map-get($fonts, "main");
+		font-size: map-get($font-size, "200");
+		color: map-get($colours, "main-title");
+		text-decoration: none;
+	}
+}
+
+.card {
+	&__title {
+		font-family: map-get($map: $fonts, $key: "main-title");
+		font-size: map-get($map: $font-size, $key: "300");
+		font-weight: map-get($map: $font-weight, $key: "500");
+		color: map-get($map: $colours, $key: "main-title");
+		letter-spacing: 1.25px;
+		line-height: map-get($map: $font-size, $key: "500");
+		margin-bottom: 0.3rem;
+	}
+	&__description {
+		font-family: map-get($map: $fonts, $key: "main");
+		color: map-get($map: $colours, $key: "main-text");
+		line-height: map-get($map: $font-size, $key: "200");
+	}
+	&-info {
+		font-family: map-get($map: $fonts, $key: "main-title");
+		font-size: map-get($map: $font-size, $key: "300");
+		font-weight: map-get($map: $font-weight, $key: "500");
+		color: map-get($map: $colours, $key: "main-title");
+		// line-height: map-get($map: $font-size, $key: "500");
+	}
+}
+
+.form {
+	h1 {
+		font-family: map-get($map: $fonts, $key: "main-title");
+		font-size: map-get($map: $font-size, $key: "300");
+		font-weight: map-get($map: $font-weight, $key: "500");
+		color: map-get($map: $colours, $key: "main-title");
+		line-height: map-get($map: $font-size, $key: "500");
+		margin-bottom: 0.3rem;
+	}
+	label {
+		font-family: map-get($map: $fonts, $key: "main-title");
+		color: map-get($map: $colours, $key: "main-title");
+	}
+	&__input {
+		font-family: map-get($map: $fonts, $key: "main") !important;
+		font-size: map-get($map: $font-size, $key: "100") !important;
+		color: map-get($map: $colours, $key: "main-text") !important;
+	}
+}
+
+.form__row {
+	h1 {
+		font-family: map-get($map: $fonts, $key: "main-title");
+		font-size: map-get($map: $font-size, $key: "300");
+		font-weight: map-get($map: $font-weight, $key: "500");
+		color: map-get($map: $colours, $key: "main-title");
+		line-height: map-get($map: $font-size, $key: "500");
+		margin-bottom: 0.3rem;
+	}
+}
+
+.quote,
+#tilde,
+#author {
+	font-family: map-get($map: $fonts, $key: "quote4");
+	color: map-get($map: $colours, $key: "main-text");
+	font-size: map-get($map: $font-size, $key: "quote");
+}
+
+h2 {
+	color: map-get($map: $colours, $key: "main-title");
+}
+
+#author {
+	font-size: map-get($map: $font-size, $key: "author");
+	word-wrap: nowrap;
+}
+
+.quote::before,
+.quote::after {
+	font-family: "Font Awesome 5 Free";
+	font-size: map-get($map: $font-size, $key: "500");
+	color: map-get($map: $colours, $key: "main-title");
+}
+.quote::before {
+	content: "\f10d";
+	vertical-align: bottom;
+	padding-right: 1em;
+}
+.quote::after {
+	content: "\f10e";
+	vertical-align: top;
+	padding-left: 1em;
+}
+
+.cookies {
+	&__content {
+		font-family: map-get($map: $fonts, $key: "main");
+		color: map-get($map: $colours, $key: "main-text");
+	}
+	a {
+		font-family: map-get($map: $fonts, $key: "main");
+		color: map-get($map: $colours, $key: "link");
+		font-weight: map-get($map: $font-weight, $key: "300");
+		text-decoration: none;
+	}
+	a:hover {
+		color: lighten($color: map-get($map: $colours, $key: "link"), $amount: 20);
+	}
+	&__button {
+		font-family: map-get($map: $fonts, $key: "main") !important;
+		color: map-get($map: $colours, $key: "main-text") !important;
+	}
+}
+
+footer {
+	color: map-get($colours, "main-text");
+	font-family: map-get($fonts, "main");
+	font-size: map-get($map: $font-size, $key: "100");
+	letter-spacing: 1px;
+	font-weight: map-get($map: $font-weight, $key: "100");
+}
+
+@include phone {
+	.quote,
+	#tilde {
+		font-size: map-get($map: $font-size, $key: "quote-mobile");
+	}
+	.quote::before,
+	.quote::after {
+		font-size: map-get($map: $font-size, $key: "300");
+	}
+	#author {
+		font-size: map-get($map: $font-size, $key: "author-mobile");
+	}
+}

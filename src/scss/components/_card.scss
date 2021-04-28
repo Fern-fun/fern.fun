@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.card {
+	// border: 1px solid red;
+	box-shadow: 0 0 1em 0.3em map-get($map: $colours, $key: "shadow");
+	width: 100%;
+	padding: 2rem;
+	border-radius: 0.75rem;
+	background-color: map-get($map: $colours, $key: "second-bg");
+	display: flex;
+	flex-direction: column;
+}
+
+.card__img {
+	width: auto;
+	margin-bottom: 2rem;
+}
+
+.card-info {
+	// border: 1px solid red;
+	padding: 2rem;
+	box-shadow: 0 0 1em map-get($map: $colours, $key: "shadow");
+	background-color: map-get($map: $colours, $key: "second-bg");
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	// margin: 4rem 3rem;
+	border-radius: 0.75rem;
+	width: calc(100% - 6rem);
+	text-align: center;
+}
+
+@include phone {
+	.card-info {
+		width: 100%;
+		border-radius: 0;
+	}
+	.card {
+		padding: 1rem;
+	}
+}
