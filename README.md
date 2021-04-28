@@ -6,7 +6,6 @@
 
 <div align="center">
 
-[![Made for](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com)
 [![GitHub Issues](https://img.shields.io/github/issues/fern-fun/fern.fun.svg)](https://github.com/fern-fun/fern.fun/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fern-fun/fern.fun.svg)](https://github.com/fern-fun/fern.fun/pulls)
 [![License](https://img.shields.io/github/license/fern-fun/fern.fun.svg)](/LICENSE)
