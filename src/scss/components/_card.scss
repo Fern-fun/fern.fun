@@ -31,6 +31,17 @@
 	text-align: center;
 }
 
+.card__link {
+	text-align: right;
+	position: absolute;
+	bottom: -10;
+	right: 0;
+}
+
+.card__content {
+	position: relative;
+}
+
 @include phone {
 	.card-info {
 		width: 100%;

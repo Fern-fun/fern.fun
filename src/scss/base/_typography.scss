@@ -55,6 +55,15 @@ nav {
 		color: map-get($map: $colours, $key: "main-title");
 		// line-height: map-get($map: $font-size, $key: "500");
 	}
+	&__link {
+		font-family: map-get($map: $fonts, $key: "main");
+		color: map-get($map: $colours, $key: "link");
+		font-weight: map-get($map: $font-weight, $key: "300");
+		text-decoration: none;
+	}
+	&__link:hover {
+		color: lighten($color: map-get($map: $colours, $key: "link"), $amount: 20);
+	}
 }
 
 .form {
