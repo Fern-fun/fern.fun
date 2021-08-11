@@ -1,7 +1,0 @@
-@use 'sizes' as *;
-
-@mixin phone {
-	@media only screen and (max-width: map-get($map: $sizes, $key: "mobile")) {
-		@content;
-	}
-}

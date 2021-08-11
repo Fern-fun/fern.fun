@@ -1,107 +1,70 @@
-<p align="center">
- <a href="https://www.vecteezy.com/free-vector/icons"><img width=200px height=200px src="http://fern.fun/img/fern.png" alt="Project logo"></a>
-</p>
+# Getting Started with Create React App
 
-<h3 align="center">Fern.fun</h3>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<div align="center">
+## Available Scripts
 
-[![GitHub Issues](https://img.shields.io/github/issues/fern-fun/fern.fun.svg)](https://github.com/fern-fun/fern.fun/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fern-fun/fern.fun.svg)](https://github.com/fern-fun/fern.fun/pulls)
-[![License](https://img.shields.io/github/license/fern-fun/fern.fun.svg)](/LICENSE)
+In the project directory, you can run:
 
-</div>
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<p align="center">
-    <br> 
-</p>
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## 📝 Table of Contents
-<!-- - [Getting Started](#getting_started) -->
-<!-- - [Deployment](#deployment) -->
-<!-- - [Usage](#usage) -->
+### `npm test`
 
-- [About](#about)
-- [Built Using](#built_using)
-- [Authors](#authors)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🧐 About <a name = "about"></a>
+### `npm run build`
 
-Page for our organization
-<!-- ## 🏁 Getting Started <a name = "getting_started"></a>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system. -->
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<!-- ### Prerequisites
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Installing
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-A step by step series of examples that tell you how to get a development env running.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Say what the step will be
+## Learn More
 
-```
-Give the example
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-And repeat
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-until finished
-```
+### Code Splitting
 
-End with an example of getting some data out of the system or using it for a little demo. -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<!-- ## 🔧 Running the tests <a name = "tests"></a>
+### Analyzing the Bundle Size
 
-Explain how to run the automated tests for this system.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Break down into end to end tests
+### Making a Progressive Web App
 
-Explain what these tests test and why
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```
-Give an example
-```
+### Advanced Configuration
 
-### And coding style tests
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Explain what these tests test and why
+### Deployment
 
-```
-Give an example
-``` -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-<!-- ## 🎈 Usage <a name="usage"></a>
+### `npm run build` fails to minify
 
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system. -->
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [HTML](https://html.com) 
-- [SASS](https://sass-lang.com) 
-- [JS](https://www.javascript.com) 
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@Shaking-Donut](https://github.com/shaking-donut) - Frontend
-- [@MrJacob12](https://github.com/mrjacob12) - Idea 
-
-See also the list of [contributors](https://github.com/fern-fun/fern.fun/contributors) who participated in this project.
-
-<!-- ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
