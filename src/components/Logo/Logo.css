@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.logo__panel {
+  width: max-content;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo span {
+  font-family: "Lobster", cursive;
+  color: #24fe41;
+  font-size: 3rem;
+}
