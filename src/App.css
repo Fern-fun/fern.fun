@@ -9,13 +9,15 @@
 body {
 	font-family: "Ubuntu", sans-serif;
 	background: #474540;
+	overflow-x: hidden;
 }
 
 html {
-	scroll-snap-type: y mandatory;
+	scroll-snap-type: y proximity;
 }
 
 div.section {
 	height: 100vh;
 	scroll-snap-align: start;
+	position: relative;
 }

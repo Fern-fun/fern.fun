@@ -1,0 +1,29 @@
+$font-size: 3rem;
+
+.about-us {
+	font-family: "Major Mono Display", monospace;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: $font-size;
+	color: #24fe41;
+
+	span {
+		display: block;
+	}
+}
+
+.about-us__sub {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: $font-size - 1.5rem;
+	color: #c6cd7b;
+
+	span {
+		display: block;
+	}
+}
