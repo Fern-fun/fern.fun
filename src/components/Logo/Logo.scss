@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@1,100&display=swap");
+
+$font-size: 5rem;
+
+.logo__panel {
+	width: max-content;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+.logo span {
+	font-family: "Major Mono Display", monospace;
+	color: #24fe41;
+	font-size: $font-size;
+}
+.logo__cursor {
+	font-size: $font-size;
+	color: #24fe41;
+	padding-left: 5px;
+}
+.scroll-down-arrow {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	span {
+		font-family: "Major Mono Display", monospace;
+		color: #24fe41;
+		font-size: $font-size - 2rem;
+		display: block;
+	}
+}
