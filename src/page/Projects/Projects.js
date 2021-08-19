@@ -1,34 +1,27 @@
-import Slider from "react-slick";
-import Project from "./Project";
+import Project from "../../components/Project/Project";
+import Carousel from "../../components/Carousel/Carousel";
 import { Parallax } from "react-scroll-parallax";
 import "./Projects.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const Projects = () => {
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		centerMode: true
-	};
-
 	return (
 		<div className="projects__wrapper">
-			<Parallax className="projects" y={["500px", "-100px"]}>
-				<span>ouR pRojects</span>
-			</Parallax>
+			{/* <Parallax className="projects" y={["500px", "-100px"]}>
+				<span>ouR projects</span>
+			</Parallax> */}
 			<div className="projects__carousel-wrapper">
-				<Slider {...settings} className="projects__carousel">
+				<Carousel className="projects__carousel">
+					<Project
+						src="./images/fern.svg"
+						title="Tittles"
+						content="Description"
+					/>
 					<Project />
 					<Project />
 					<Project />
 					<Project />
 					<Project />
-					<Project />
-				</Slider>
+				</Carousel>
 			</div>
 		</div>
 	);

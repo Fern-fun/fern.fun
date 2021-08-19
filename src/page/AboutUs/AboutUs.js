@@ -14,7 +14,7 @@ const AboutUs = () => {
 			<Parallax>
 				<Fern height="500px" left="-150px" top="-150px" rotate="160deg" />
 			</Parallax>
-			<Fern height="400px" right="-100px" top="380px" rotate="-50deg" />
+			<Fern height="550px" right="-100px" top="330px" rotate="-50deg" />
 		</div>
 	);
 };

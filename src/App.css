@@ -7,13 +7,12 @@
 }
 
 body {
-	font-family: "Ubuntu", sans-serif;
 	background: #474540;
 	overflow-x: hidden;
 }
 
 html {
-	scroll-snap-type: y proximity;
+	scroll-snap-type: y mandatory;
 }
 
 div.section {
