@@ -14,7 +14,7 @@ const Carousel = (props) => {
 	const listWidth = (props.children.length - 1) * listItemWidth;
 	const [translateAmount, setTranslateAmount] = useState(0);
 	const prevHandler = () => {
-		if (translateAmount == 0) {
+		if (translateAmount === 0) {
 			return;
 		} else {
 			setTranslateAmount((prev) => {
@@ -23,7 +23,7 @@ const Carousel = (props) => {
 		}
 	};
 	const nextHandler = () => {
-		if (-translateAmount == listWidth) {
+		if (-translateAmount === listWidth) {
 			return;
 		} else {
 			setTranslateAmount((prev) => {
