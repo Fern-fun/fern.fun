@@ -9,7 +9,7 @@ const AboutUs = () => {
 				<span>About us</span>
 			</Parallax>
 			<Parallax className="about-us__sub" y={["500px", "0px"]}>
-				<span>Siema, ja tylko przejazdem</span>
+				<span>Hello, I only passing</span>
 			</Parallax>
 			<Parallax>
 				<Fern height="500px" left="-150px" top="-150px" rotate="160deg" />

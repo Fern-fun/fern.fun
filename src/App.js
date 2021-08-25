@@ -4,8 +4,13 @@ import Home from "./page/Home/Home";
 import AboutUs from "./page/AboutUs/AboutUs";
 import Projects from "./page/Projects/Projects";
 import Contact from "./page/Contact/Contact";
+import { isMobile } from "react-device-detect";
+import UnderConstructions from "./components/UnderConstructions/UnderConstructions";
 
 function App() {
+	if (isMobile) {
+		return <UnderConstructions />;
+	}
 	return (
 		<div className="App">
 			<ParallaxProvider>

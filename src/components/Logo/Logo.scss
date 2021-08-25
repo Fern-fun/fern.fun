@@ -26,6 +26,7 @@ $font-size: 5rem;
 	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	animation: jumpingArrows 0.5s ease-in infinite alternate;
 
 	span {
 		pointer-events: none;
@@ -38,4 +39,12 @@ $font-size: 5rem;
 }
 #first-arrow {
 	color: #c6cd7b;
+}
+@keyframes jumpingArrows {
+	0% {
+		transform: translateY(-50%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
