@@ -3,6 +3,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Home from "./page/Home/Home";
 import AboutUs from "./page/AboutUs/AboutUs";
 import Projects from "./page/Projects/Projects";
+import Contact from "./page/Contact/Contact";
 
 function App() {
 	return (
@@ -18,7 +19,7 @@ function App() {
 					<Projects />
 				</div>
 				<div className="section" id="Contact">
-					<AboutUs />
+					<Contact />
 				</div>
 			</ParallaxProvider>
 		</div>
