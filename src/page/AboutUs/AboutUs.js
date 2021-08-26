@@ -9,7 +9,9 @@ const AboutUs = () => {
 				<span>About us</span>
 			</Parallax>
 			<Parallax className="about-us__sub" y={["500px", "0px"]}>
-				<span>Hello, I only passing</span>
+				<p>Hi, we are a small team of programers that consists of a full stack and a frontend developer.</p>
+				<p>Fern.fun is a representation of our adventure with programing. We're an open team looking for new members.</p>
+				<p>If you want to join us or cooperate with us, we're glad to hear it, contact.us</p> 
 			</Parallax>
 			<Parallax>
 				<Fern height="500px" left="-150px" top="-150px" rotate="160deg" />
