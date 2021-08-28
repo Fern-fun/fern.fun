@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="projects__carousel-wrapper">
         <Carousel className="projects__carousel">
           <Project
-            src="./images/fern.svg"
+            src="./images/cloud.svg"
             github="https://github.com/Fern-fun/cloud.fern.fun"
             title="cloud.fern.fun"
             content="Cloud storage like google drive"
