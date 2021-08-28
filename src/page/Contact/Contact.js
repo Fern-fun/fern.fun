@@ -18,7 +18,10 @@ const Contact = () => {
           src="./images/gmail.svg"
           href="mailto:jacob@fern.fun?subject=Message%20to%20Fern.fun&body=Hi%20..."
         />
-        <ContactIcon src="./images/linkedin.svg" href="#" />
+        <ContactIcon
+          src="./images/linkedin.svg"
+          href="https://www.linkedin.com/company/fern-fun"
+        />
       </Parallax>
       <Parallax>
         <Fern height="500px" left="-150px" top="-150px" rotate="160deg" />
