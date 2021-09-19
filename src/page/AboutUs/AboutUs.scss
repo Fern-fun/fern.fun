@@ -14,14 +14,43 @@ $font-size: 3rem;
 	}
 }
 
+.about-us-mobile {
+	font-family: "Major Mono Display", monospace;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: translate(-10%, -50%);
+	font-size: $font-size;
+	color: #24fe41;
+
+	span {
+		display: block;
+	}
+}
+
 .about-us__sub {
 	font-family: "Montserrat", sans-serif;
 	position: absolute;
-	top: 20%;
+	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: $font-size - 1.5rem;
 	color: #c6cd7b;
+
+	span {
+		display: block;
+	}
+}
+
+.about-us__sub-mobile {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	top: 60%;
+	left: 20%;
+	transform: translate(-10%, -50%);
+	font-size: $font-size - 1.5rem;
+	color: #c6cd7b;
+	text-shadow: 0px 0px 0px #c6cd7b, 0px 0px 0px #c6cd7b;
 
 	span {
 		display: block;

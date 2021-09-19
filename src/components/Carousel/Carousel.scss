@@ -24,7 +24,7 @@
 	transform: translateX(-50%);
 	background-color: transparent;
 	border-radius: 50%;
-	transition: font-size 0.2s ease-in-out;
+	// transition: font-size 0.2s ease-in-out;
 }
 $padding-from-box: -100px;
 $hover-bg-color: rgba(255 255 255 / 0.2);
@@ -38,10 +38,10 @@ $hover-bg-color: rgba(255 255 255 / 0.2);
 	transform: rotate(90deg) translateX(-50%);
 }
 .carousel__button-next:hover {
-	font-size: 3.5rem;
+	animation: enlarge 0.2s alternate infinite;
 }
 .carousel__button-prev:hover {
-	font-size: 3.5rem;
+	animation: enlarge 0.2s alternate infinite;
 }
 
 .carousel__list {
@@ -62,4 +62,13 @@ $hover-bg-color: rgba(255 255 255 / 0.2);
 	flex-shrink: 0;
 	margin-left: 1.5vh;
 	width: 60vh;
+}
+
+@keyframes enlarge {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 1.1;
+	}
 }

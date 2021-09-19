@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@1,100&display=swap");
 
 $font-size: 5rem;
+$font-size-mobile: $font-size - 2rem;
 
 .logo__panel {
 	width: max-content;
@@ -16,10 +17,20 @@ $font-size: 5rem;
 	color: #24fe41;
 	font-size: $font-size;
 }
+.logo-mobile span {
+	font-family: "Major Mono Display", monospace;
+	color: #24fe41;
+	font-size: $font-size-mobile;
+}
 .logo__cursor {
 	font-size: $font-size;
 	color: #c6cd7b;
 	padding-left: 5px;
+}
+.logo__cursor-mobile {
+	font-size: $font-size-mobile;
+	color: #c6cd7b;
+	padding-left: 3px;
 }
 .scroll-down-arrow {
 	position: absolute;

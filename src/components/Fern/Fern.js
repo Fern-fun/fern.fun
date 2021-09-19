@@ -8,6 +8,8 @@ const Fern = (props) => {
 	const imgTop = props.top;
 	const imgBottom = props.bottom;
 	const imgRotate = props.rotate;
+	const imgOpacity = props.opacity ? props.opacity : 1;
+	const imgBlur = props.blur ? "blur" : "";
 
 	const style = {
 		height: imgHeight,
@@ -16,12 +18,19 @@ const Fern = (props) => {
 		right: imgRight,
 		bottom: imgBottom,
 		transform: `rotate(${imgRotate})`,
-		position: "absolute"
+		position: "absolute",
+		opacity: imgOpacity
 	};
 
 	return (
 		<Parallax>
-			<img src="./images/fern.svg" id="fernImg" alt="" style={style} />
+			<img
+				src="./images/fern.svg"
+				id="fernImg"
+				alt=""
+				style={style}
+				className={imgBlur}
+			/>
 		</Parallax>
 	);
 };
