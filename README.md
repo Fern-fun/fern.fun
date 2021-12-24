@@ -1,5 +1,5 @@
 <p align="center">
- <a><img width=200px height=200px src="https://avatars.githubusercontent.com/u/71661080" alt="Project logo"></a>
+ <a><img width=200px height=200px style="border-radius: 20px" src="https://avatars.githubusercontent.com/u/71661080" alt="Project logo"></a>
 </p>
 
 <h1 align="center">Fern.fun</h1>
