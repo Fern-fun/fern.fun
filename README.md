@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![GitHub Issues](https://img.shields.io/github/issues/Fern-fun/fern.fun.svg)](https://github.com/Fern-fun/StringProgressBar/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/Fern-fun/fern.fun.svg)](https://github.com/Fern-fun/fern.fun/issues)
 [![License](https://img.shields.io/github/license/Fern-fun/fern.fun.svg)](/LICENSE)
 
 </div>
