@@ -43,26 +43,25 @@ function Logo() {
 					/>
 				)}
 			</Parallax>
-			<Parallax className="scroll-down-arrow" y={[30, -80]}>
+			<div className="scroll-down-arrow">
 				<span id="first-arrow">V</span>
-			</Parallax>
-			<Parallax className="scroll-down-arrow" y={[75, -50]}>
+			</div>
+			<div className="scroll-down-arrow">
 				<span>V</span>
-			</Parallax>
-			<Parallax y={["-200px", "200px"]}>
-				{isMobile ? (
-					<Fern
-						height="700px"
-						right="-200px"
-						top="-300px"
-						rotate="-30deg"
-						opacity="0.2"
-						blur
-					/>
-				) : (
-					<Fern height="700px" right="-200px" top="-300px" rotate="-30deg" />
-				)}
-			</Parallax>
+			</div>
+
+			{isMobile ? (
+				<Fern
+					height="700px"
+					right="-200px"
+					top="-300px"
+					rotate="-30deg"
+					opacity="0.2"
+					blur
+				/>
+			) : (
+				<Fern height="700px" right="-200px" top="-300px" rotate="-30deg" />
+			)}
 		</div>
 	);
 }

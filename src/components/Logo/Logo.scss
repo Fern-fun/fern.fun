@@ -48,6 +48,9 @@ $font-size-mobile: $font-size - 2rem;
 		display: block;
 	}
 }
+.scroll-down-arrow:nth-of-type(2) {
+	top: calc(85% - 1rem);
+}
 #first-arrow {
 	color: #c6cd7b;
 }

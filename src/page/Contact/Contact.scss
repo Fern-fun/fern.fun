@@ -3,7 +3,7 @@ $font-size: 3rem;
 .contact {
 	font-family: "Major Mono Display", monospace;
 	position: absolute;
-	top: 20%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: $font-size;
@@ -30,13 +30,13 @@ $font-size: 3rem;
 .contact__sub {
 	font-family: "Montserrat", sans-serif;
 	position: absolute;
-	top: 30%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: $font-size - 1.5rem;
 	color: #c6cd7b;
 
-	.parallax-inner {
+	& > div {
 		font-size: 3rem;
 		width: 12ch;
 		display: flex;

@@ -31,20 +31,20 @@ const AboutUs = () => {
 					<span>{aboutUsText}</span>
 				</Parallax>
 			)}
-			<Parallax>
-				{isMobile ? (
-					<Fern
-						height="500px"
-						left="-150px"
-						top="-150px"
-						rotate="160deg"
-						opacity="0.2"
-						blur
-					/>
-				) : (
-					<Fern height="500px" left="-150px" top="-150px" rotate="160deg" />
-				)}
-			</Parallax>
+
+			{isMobile ? (
+				<Fern
+					height="500px"
+					left="-150px"
+					top="-150px"
+					rotate="160deg"
+					opacity="0.2"
+					blur
+				/>
+			) : (
+				<Fern height="500px" left="-150px" top="-150px" rotate="160deg" />
+			)}
+
 			{isMobile ? (
 				<Fern
 					height="550px"

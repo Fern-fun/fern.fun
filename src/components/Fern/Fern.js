@@ -23,15 +23,13 @@ const Fern = (props) => {
 	};
 
 	return (
-		<Parallax>
-			<img
-				src="./images/fern.svg"
-				id="fernImg"
-				alt=""
-				style={style}
-				className={imgBlur}
-			/>
-		</Parallax>
+		<img
+			src="./images/fern.svg"
+			id="fernImg"
+			alt=""
+			style={style}
+			className={imgBlur}
+		/>
 	);
 };
 
