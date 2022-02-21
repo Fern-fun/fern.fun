@@ -71,7 +71,7 @@ function Widget(props) {
             }
           });
       }
-    }, 10000);
+    }, 20000);
 
     return () => clearInterval(intervalAPI);
   }, []);
