@@ -1,29 +1,18 @@
-import "./App.css";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Home from "./page/Home/Home";
-import AboutUs from "./page/AboutUs/AboutUs";
-import Projects from "./page/Projects/Projects";
-import Contact from "./page/Contact/Contact";
+import Widget from "./components/Widget/Widget";
+import WidgetPanel from "./components/Widget/WidgetPanel";
 
 function App() {
-	return (
-		<div className="App">
-			<ParallaxProvider>
-				<div className="section" id="LandingPage">
-					<Home />
-				</div>
-				<div className="section" id="AboutUs">
-					<AboutUs />
-				</div>
-				{/* <div className="section" id="Projects">
-					<Projects />
-				</div> */}
-				<div className="section" id="Contact">
-					<Contact />
-				</div>
-			</ParallaxProvider>
-		</div>
-	);
+  return (
+    <div className="App">
+      <WidgetPanel>
+        <Widget type="logo" />
+        <Widget type="time" />
+        <Widget type="github" />
+        <Widget type="mail" />
+        <Widget type="apiStatus" />
+      </WidgetPanel>
+    </div>
+  );
 }
 
 export default App;

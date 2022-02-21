@@ -1,0 +1,197 @@
+@use "../../variables";
+
+.widgetPanel {
+  @media screen and (min-width: variables.$minWidthMedia) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 850px;
+
+    display: grid;
+    grid-template-columns: 200px 400px 100px;
+    gap: 10px;
+
+    grid-auto-rows: minmax(100px, auto);
+  }
+  @media screen and (max-width: variables.$minWidthMedia) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.widget {
+  background: variables.$widgetColor;
+  position: relative;
+
+  @media screen and (min-width: variables.$minWidthMedia) {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 8px;
+
+    .logo img {
+      width: 200px;
+      height: 200px;
+
+      transition: transform 0.5s ease;
+    }
+    .logo:hover img {
+      transform: scale(1.1) rotate(-20deg);
+
+      transition: transform 0.5s ease;
+    }
+  }
+
+  @media screen and (max-width: variables.$minWidthMedia) {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 8px;
+
+    .logo img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  //Time widget
+  .time {
+    width: max-content;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    span {
+      font-size: 5rem;
+      font-family: "Bebas Neue", cursive;
+    }
+
+    #hours,
+    #minutes {
+      color: variables.$timeFontColor;
+    }
+
+    #colon {
+      color: variables.$colonFontColor;
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+  #date {
+    font-size: 1.2rem;
+    color: #ffd16e;
+    font-family: "Bebas Neue", cursive;
+
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+
+.logoWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.timeWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+}
+
+.githubWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+
+  .githubLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 124px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.2) rotate(20deg);
+
+      transition: transform 0.5s ease;
+    }
+  }
+}
+
+.mailWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+  .mailLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 124px;
+      transition: transform 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.2) rotate(-20deg);
+
+      transition: transform 0.5s ease;
+    }
+  }
+}
+
+.statusWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 85%;
+  }
+
+  .status {
+    display: grid;
+    grid-template-columns: 21px 100px 100px;
+    gap: 10px;
+    width: auto;
+    margin: 25px;
+  }
+
+  img {
+    width: 23px;
+    height: 23px;
+
+    border-radius: 8px;
+  }
+}
