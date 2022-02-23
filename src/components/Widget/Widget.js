@@ -16,7 +16,7 @@ function Widget(props) {
   const [latency, setLatency] = useState(
     <span style={{ color: "white" }}>{"N/A"}</span>
   );
-
+  //* Update time every second
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(getTime());
@@ -25,6 +25,7 @@ function Widget(props) {
     return () => clearInterval(interval);
   }, []);
 
+  //* Measures the latency of the server
   useEffect(() => {
     let start = 0;
     start = new Date().getTime();
@@ -44,7 +45,7 @@ function Widget(props) {
       })
       .catch((error) => {
         if (error) {
-          setLatency("API not available");
+          setLatency(<span>{"API not available"}</span>);
         }
       });
     const intervalAPI = setInterval(() => {
@@ -67,7 +68,7 @@ function Widget(props) {
           })
           .catch((error) => {
             if (error) {
-              setLatency("API not available");
+              setLatency(<span>{"API not available"}</span>);
             }
           });
       }
@@ -76,6 +77,7 @@ function Widget(props) {
     return () => clearInterval(intervalAPI);
   }, []);
 
+  //* Renders the widget Logo
   if (type === "logo") {
     return (
       <div className="widget logoWidget">
@@ -84,6 +86,7 @@ function Widget(props) {
         </div>
       </div>
     );
+    //* Renders the widget Time
   } else if (type === "time") {
     return (
       <div className="widget timeWidget">
@@ -101,6 +104,7 @@ function Widget(props) {
         </div>
       </div>
     );
+    //* Renders the widget Github
   } else if (type === "github") {
     return (
       <div className="widget githubWidget">
@@ -111,6 +115,7 @@ function Widget(props) {
         </div>
       </div>
     );
+    //* Renders the widget Mail
   } else if (type === "mail") {
     return (
       <div className="widget mailWidget">
@@ -119,11 +124,12 @@ function Widget(props) {
             href="mailto:contact@fern.fun?subject=Message%20to%20Fern.fun&body=Hello%20..."
             target={"_blank"}
           >
-            <img src="/img/gmail.svg" alt="mail" />
+            <img src="/img/mail.svg" alt="mail" />
           </a>
         </div>
       </div>
     );
+    //* Renders the widget API
   } else if (type === "apiStatus") {
     return (
       <div className="widget statusWidget">
