@@ -10,7 +10,7 @@
     min-width: 850px;
 
     display: grid;
-    grid-template-columns: 200px 400px 100px;
+    grid-template-columns: 200px 400px 200px;
     gap: 10px;
 
     grid-auto-rows: minmax(100px, auto);
@@ -109,6 +109,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .timeWidget {
@@ -193,5 +198,24 @@
     height: 23px;
 
     border-radius: 8px;
+  }
+}
+
+.footerWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+
+  @media screen and (min-width: variables.$minWidthMedia) {
+    grid-row: 3;
+    grid-column: 1 / 4;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 85%;
   }
 }

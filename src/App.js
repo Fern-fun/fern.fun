@@ -10,6 +10,7 @@ function App() {
         <Widget type="github" />
         <Widget type="mail" />
         <Widget type="apiStatus" />
+        {/* <Widget type="footer" /> */}
       </WidgetPanel>
     </div>
   );

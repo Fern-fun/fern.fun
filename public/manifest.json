@@ -5,7 +5,12 @@
     {
       "src": "/img/fern.fun.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "400x400"
+    },
+    {
+      "src": "/img/fern.fun.ico",
+      "type": "image/ico",
+      "sizes": "400x400"
     }
   ],
   "start_url": ".",
