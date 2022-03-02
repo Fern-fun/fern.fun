@@ -21,7 +21,14 @@ function DoughnutChart(props) {
       },
     ],
   };
-  return <Doughnut data={data} width={"140px"} height={"140px"} />;
+  return (
+    <Doughnut
+      data={data}
+      width={"140px"}
+      height={"140px"}
+      className="doughnut"
+    />
+  );
 }
 
 export default DoughnutChart;
