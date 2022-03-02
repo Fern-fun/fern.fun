@@ -1,3 +1,5 @@
+import React from "react";
+
 import Widget from "./components/Widget/Widget";
 import WidgetPanel from "./components/Widget/WidgetPanel";
 
@@ -10,7 +12,7 @@ function App() {
         <Widget type="github" />
         <Widget type="mail" />
         <Widget type="apiStatus" />
-        {/* <Widget type="footer" /> */}
+        <Widget type="chart" />
       </WidgetPanel>
     </div>
   );

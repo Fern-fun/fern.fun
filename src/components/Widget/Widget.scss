@@ -201,6 +201,45 @@
   }
 }
 
+.chartWidget {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    width: 90vw;
+    margin: 10px;
+  }
+
+  .chartContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .chartText {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+
+      #title {
+        grid-column: 1 / span 2;
+        font-size: 1.2rem;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+      }
+    }
+
+    #used {
+      font-size: 1rem;
+      color: rgba(173, 247, 72, 1);
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    #free {
+      font-size: 1rem;
+      color: rgba(251, 107, 139, 1);
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+}
+
 .footerWidget {
   @media screen and (max-width: variables.$minWidthMedia) {
     width: 90vw;

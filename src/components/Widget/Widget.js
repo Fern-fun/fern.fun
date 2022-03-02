@@ -6,6 +6,7 @@ import Footer from "./Type/Footer";
 import Github from "./Type/Github";
 import Time from "./Type/Time";
 import Logo from "./Type/Logo";
+import Chart from "./Type/Chart";
 
 function Widget(props) {
   const { type } = props;
@@ -20,6 +21,8 @@ function Widget(props) {
     return <Mail />;
   } else if (type === "apiStatus") {
     return <ApiStatus />;
+  } else if (type === "chart") {
+    return <Chart />;
   } else if (type === "footer") {
     return <Footer />;
   }
