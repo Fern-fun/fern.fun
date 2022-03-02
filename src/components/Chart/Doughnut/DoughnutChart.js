@@ -26,7 +26,7 @@ function DoughnutChart(props) {
       data={data}
       width={"140px"}
       height={"140px"}
-      className="doughnut"
+      style={{ width: "140px", height: "140px" }}
     />
   );
 }
