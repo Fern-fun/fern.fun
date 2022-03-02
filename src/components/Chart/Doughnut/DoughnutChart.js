@@ -24,8 +24,12 @@ function DoughnutChart(props) {
   return (
     <Doughnut
       data={data}
-      width={"140px"}
-      height={"140px"}
+      options={{
+        aspectRatio: 1,
+        responsive: false,
+      }}
+      width="140"
+      height="140"
       style={{ width: "140px", height: "140px" }}
     />
   );
