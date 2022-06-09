@@ -6,11 +6,13 @@ function Chart() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.fern.fun/pi/hardware/data/")
+    fetch("https://api.fern.fun/pi/hardware/disk/free/")
       .then((response) => response.json())
       .then((data) => {
-        data = data["disk"].replace("GB", "").split("/");
-        setData([data[1] - data[0], data[1] - (data[1] - data[0])]);
+        setData([
+          data.total - data.free,
+          data.total - (data.total - data.free),
+        ]);
       })
       .catch((error) => {
         setError(error);
