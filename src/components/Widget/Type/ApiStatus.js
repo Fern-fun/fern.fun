@@ -23,7 +23,7 @@ function ApiStatus() {
       })
       .catch((error) => {
         if (error) {
-          setLatency("API not available");
+          setLatency(<span color="white">{"API not available"}</span>);
         }
       });
     const intervalAPI = setInterval(() => {
@@ -44,7 +44,7 @@ function ApiStatus() {
         })
         .catch((error) => {
           if (error) {
-            setLatency("API not available");
+            setLatency(<span color="white">{"API not available"}</span>);
           }
         });
     }, 20000);

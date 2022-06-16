@@ -9,3 +9,58 @@
 body {
   background: variables.$background;
 }
+
+.blackhole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 10em;
+  height: 10em;
+  /* background-color: red; */
+}
+
+.blackhole .megna {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: linear-gradient(#ff4500, #ff4500, #ff9900);
+  /* box-shadow: 0 0 60px 30px rgba(255, 175, 83, 0.7); */
+  box-shadow: 0 0 60px 30px #fcbd3e, /* inner white */ 0 0 100px 60px #fd7a4d,
+    /* middle magenta */ 0 0 140px 90px #ff0b6b; /* outer cyan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(5px);
+}
+
+.blackhole .black {
+  width: 90%;
+  height: 90%;
+  border-radius: 45% 50% 50% 50%;
+  background-color: black;
+  transform: rotate(0deg);
+  animation: hole 0.1s linear infinite normal;
+}
+
+@keyframes hole {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.vis {
+  @media screen and (max-width: variables.$minWidthMedia) {
+    visibility: hidden;
+  }
+  float: right;
+  cursor: pointer;
+  margin: 15px;
+  opacity: 0.5;
+
+  transition: opacity 0.5s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}

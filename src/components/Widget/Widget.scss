@@ -33,6 +33,13 @@
     min-height: 200px;
     border-radius: 8px;
 
+    background: rgba(variables.$widgetColor, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(variables.$timeFontColor, 0.01);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(variables.$widgetColor, 0.18);
+
     .logo img {
       width: 200px;
       height: 200px;
@@ -50,6 +57,13 @@
     min-width: 200px;
     min-height: 200px;
     border-radius: 8px;
+
+    background: rgba(variables.$widgetColor, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(variables.$timeFontColor, 0.01);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(variables.$widgetColor, 0.18);
 
     .logo img {
       width: 200px;
