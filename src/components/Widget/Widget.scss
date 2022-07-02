@@ -253,6 +253,8 @@
 }
 
 .footerWidget {
+  position: relative;
+
   @media screen and (max-width: variables.$minWidthMedia) {
     width: 90vw;
     margin: 10px;
@@ -263,9 +265,45 @@
     grid-column: 1 / 4;
   }
 
+  .projects {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+
+    .projectsTile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        font-size: 1.5rem;
+        color: #b7e382;
+        font-family: "Ubuntu", sans-serif;
+        line-height: 85%;
+
+        text-decoration: none;
+      }
+    }
+  }
+
+  .createdBy {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+      font-size: 0.7rem;
+    }
+  }
+
   span {
     font-size: 1.5rem;
-    color: white;
+    color: #b7e382;
     font-family: "Ubuntu", sans-serif;
     line-height: 85%;
   }

@@ -30,6 +30,7 @@ function App() {
         <Widget type="mail" />
         <Widget type="apiStatus" />
         <Widget type="chart" />
+        <Widget type="footer" />
       </WidgetPanel>
     </div>
   );
