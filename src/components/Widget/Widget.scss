@@ -274,7 +274,18 @@
     grid-template-rows: 1fr;
     gap: 10px;
 
+    @media screen and (max-width: variables.$minWidthMedia) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .projectsTile {
+      @media screen and (max-width: variables.$minWidthMedia) {
+        margin: 10px;
+      }
+
       display: flex;
       justify-content: center;
       align-items: center;
