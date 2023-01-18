@@ -15,8 +15,8 @@ function Footer() {
           </a>
         </div>
         <div className="projectsTile">
-          <a href="https://flagathon.fern.fun/" target={"_blank"}>
-            Flagathon
+          <a href="https://game.fern.fun/" target={"_blank"}>
+            Game
           </a>
         </div>
       </div>
