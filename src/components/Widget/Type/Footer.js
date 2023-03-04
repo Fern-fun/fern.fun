@@ -5,17 +5,17 @@ function Footer() {
     <div className="widget footerWidget">
       <div className="projects">
         <div className="projectsTile">
-          <a href="https://api.fern.fun/" target={"_blank"}>
+          <a href="https://api.fern.fun/" target={"_blank"} rel="noreferrer">
             API
           </a>
         </div>
         <div className="projectsTile">
-          <a href="https://pi.fern.fun/" target={"_blank"}>
+          <a href="https://pi.fern.fun/" target={"_blank"} rel="noreferrer">
             Server Dashboard
           </a>
         </div>
         <div className="projectsTile">
-          <a href="https://game.fern.fun/" target={"_blank"}>
+          <a href="https://game.fern.fun/" target={"_blank"} rel="noreferrer">
             Game
           </a>
         </div>
