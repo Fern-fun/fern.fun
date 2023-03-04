@@ -15,12 +15,10 @@ jobs:
       - name: Install
         run: npm install
       - name: Build Webapp
-        run:  npm run build-webapp:ci
+        run:  npm run build
       - name: List /build
         run: ls ./build
-      - name: List /webapp
-        run: ls ./webapp
-      - name: Deploy webapp
+      - name: Deploy app
         uses: milanmk/actions-file-deployer@master
         with:
           remote-protocol: "sftp"
@@ -30,4 +28,4 @@ jobs:
           ssh-private-key: ${{ secrets.FTP_PRIVATE_KEY }} 
           remote-path: "/fern/web/fern/"
           sync: "full"
-          local-path: "webapp/"
+          local-path: "build/"
