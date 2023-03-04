@@ -22,7 +22,7 @@ function Footer() {
       </div>
       <div className="createdBy">
         <span>
-          <span style={{ color: "#fd6888" }}>2020-2022</span> © Fern.fun
+          <span style={{ color: "#fd6888" }}>2020-2023</span> © Fern.fun
         </span>
       </div>
     </div>
