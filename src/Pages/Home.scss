@@ -1,0 +1,81 @@
+$fern-color: #69f567;
+$mobile-width: 800px;
+
+.page-container {
+  margin: 5rem 0;
+}
+
+@media screen and (min-width: $mobile-width) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .box__title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .box__content {
+      font-size: 0.8rem;
+      width: 400px;
+    }
+
+    .box__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    .box__title {
+      font-size: 1.5rem;
+
+      font-weight: 600;
+      text-transform: uppercase;
+
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+
+    .box__content {
+      font-size: 0.8rem;
+      width: auto;
+
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+
+    .box__image {
+      margin: 1rem;
+      padding: 0.5rem;
+      img {
+        width: 80%;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.fern-text {
+  background: -webkit-linear-gradient($fern-color, #48dd45);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
