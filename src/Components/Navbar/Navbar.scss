@@ -1,10 +1,5 @@
+@use "../../var.scss" as *;
 @import url("./hamburgers.scss");
-
-$navbar-bg-color: #1a1a1a;
-$navbar-hover-color: #69f567;
-$navbar-lab-color: #7dc3ff;
-
-$mobile-width: 800px;
 
 .navbar-container {
   width: 100%;

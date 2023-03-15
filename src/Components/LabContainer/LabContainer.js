@@ -1,6 +1,7 @@
 import React from "react";
 
 import { labs } from "./Labs";
+import { InlineText } from "../Paragraph/Paragraph";
 
 function LabContainer() {
   const [lab_elements, setLabElements] = React.useState([]);
@@ -9,22 +10,55 @@ function LabContainer() {
     labs.forEach((lab) => {
       setLabElements((lab_elements) => [
         ...lab_elements,
-        <div className="lab-element" key={`${lab.titl}+${lab.author}`}>
+
+        <div className="lab-element" key={lab.id}>
           <div className="lab-container__img">
-            <img src="https://i.imgur.com/0Z0Z9Zm.png" alt="lab" />
+            {lab.isPrivate ? (
+              <div className="lab-container__img-private">
+                <img src="/img/lock.svg" alt="lock" />
+              </div>
+            ) : null}
+            <img src={lab.img} alt="lab" />
           </div>
           <div className="lab-container__title">
             <div>
               <div>
-                <a href={`/a/${lab.id}`}>{lab.title}</a>
+                {lab.href !== "" ? (
+                  <a href={lab.href} target="_blank" rel="noreferrer">
+                    {lab.title}
+                  </a>
+                ) : (
+                  lab.title
+                )}
               </div>
-              <div>{lab.description}</div>
+              <div>
+                <InlineText>{lab.description}</InlineText>
+              </div>
             </div>
-            <div>
+          </div>
+          <div className="lab-container__content">
+            <div className="lab-container__content__tags">
               {lab.tags.map((i) => (
                 <span key={i} className={i}>
                   #{i}
                 </span>
+              ))}
+            </div>
+            <div className="lab-container__content__author">
+              {lab.author.map((i) => (
+                <a
+                  href={`https://github.com/${i.name}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={i.name}
+                >
+                  {i.icon !== "" ? (
+                    <img src={i.icon} alt="author" className="author-icon" />
+                  ) : null}
+                  <span key={i.name} className="author">
+                    {i.name}
+                  </span>
+                </a>
               ))}
             </div>
           </div>
@@ -41,3 +75,13 @@ function LabContainer() {
 }
 
 export default LabContainer;
+
+{
+  /* <a
+  {...(lab.href !== "" ? { href: lab.href } : {})}
+  {...(lab.href !== "" ? { target: "_blank" } : {})}
+  {...(lab.href !== "" ? { rel: "noreferrer" } : {})}
+>
+  <img src="/img/github.svg" alt="github" />
+</a>; */
+}

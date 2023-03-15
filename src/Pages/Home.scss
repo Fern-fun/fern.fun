@@ -1,5 +1,4 @@
-$fern-color: #69f567;
-$mobile-width: 800px;
+@use "../var.scss" as *;
 
 .page-container {
   margin: 5rem 0;

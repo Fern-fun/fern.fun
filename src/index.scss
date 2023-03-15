@@ -1,5 +1,4 @@
-$body-bg-color: #151414;
-$body-color: #fff;
+@use "./var.scss" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
@@ -25,4 +24,24 @@ body {
 
   color: $body-color;
   overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $body-bg-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $fern-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $fern-color;
 }
