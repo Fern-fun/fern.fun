@@ -5,9 +5,9 @@ import { InlineText } from "../Components/Paragraph/Paragraph";
 function Home() {
   return (
     <div className="page-container">
-      <div className="box">
+      <div className="box-image fadeInFromLeft">
         <div>
-          <div className="box__title">
+          <div className="box__title breathing">
             Craft website <span className="fern-text">faster</span>
           </div>
           <div className="box__content">

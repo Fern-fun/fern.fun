@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar-container">
+    <div className="navbar-container smoothShow">
       <div className="navbar-container__logo">
         <a href="/">
           <img src="/logo.png" alt="Fern Logo" />
@@ -56,7 +56,7 @@ function Navbar() {
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="comp">
-            <span>Components</span>
+            <span>About us</span>
           </div>
         </a>
       </div>
