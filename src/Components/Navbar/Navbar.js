@@ -52,7 +52,7 @@ function Navbar() {
         </a>
 
         <a
-          href="/c"
+          href="/about"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="comp">

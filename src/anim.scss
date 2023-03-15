@@ -14,6 +14,22 @@
   }
 }
 
+// Fade in from bottom
+.fadeInFromBottom {
+  animation: fadeInFromBottom 1s ease-in-out;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 // Smooth show
 .smoothShow {
   animation: smoothShow 1s ease-in-out;
