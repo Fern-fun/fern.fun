@@ -29,17 +29,43 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    height: 100%;
   }
 
   .box__title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
+    max-width: 450px;
   }
 
   .box__content {
     font-size: 0.8rem;
     width: 400px;
+
+    .box__content__media {
+      margin: 1rem;
+    }
+  }
+
+  .box-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .box-text__title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      width: fit-content;
+      margin: 1rem;
+    }
+
+    .box-text__content {
+      text-align: left;
+      max-width: 600px;
+    }
   }
 }
 
@@ -78,6 +104,10 @@
 
     margin: 1rem;
     padding: 0.5rem;
+
+    .box__content__media {
+      margin: 1rem;
+    }
   }
 }
 

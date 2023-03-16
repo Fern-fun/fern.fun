@@ -8,13 +8,22 @@ function Home() {
       <div className="box-image fadeInFromLeft">
         <div>
           <div className="box__title breathing">
-            Craft website <span className="fern-text">faster</span>
+            We <span className="fern-text">craft</span> engageing webpages.
           </div>
           <div className="box__content">
             <InlineText>
-              Crafting captivating websites that captivate audiences and elevate
-              brands to new heights.
+              Web development team crafting stunning online experiences that
+              engage and inspire.
             </InlineText>
+            <div className="box__content__media">
+              <a
+                href="https://github.com/Fern-fun"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/img/github.svg" width={24} />
+              </a>
+            </div>
           </div>
         </div>
         <div className="box__image">
