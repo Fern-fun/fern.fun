@@ -18,8 +18,6 @@ jobs:
       - name: Build Webapp
         working-directory: ./
         run:  npm run build
-      - name: Move build
-        run: sudo mv ./build ./
       - name: List /build
         run: ls ./build
       - name: Deploy app
