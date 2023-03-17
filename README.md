@@ -38,4 +38,3 @@ This project is [MIT](https://github.com/Fern-fun/fern.fun/blob/master/LICENSE) 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@MrJacob12](https://github.com/mrjacob12)
-- [@Shaking-Donut](https://github.com/Shaking-Donut)
