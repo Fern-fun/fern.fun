@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar-container smoothShow">
+    <div className="navbar-container">
       <div className="navbar-container__logo">
         <a href="/">
           <img src="/logo.png" alt="Fern Logo" />

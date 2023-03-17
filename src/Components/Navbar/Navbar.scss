@@ -8,6 +8,7 @@
   @media screen and (min-width: $mobile-width) {
     display: grid;
     grid-template-columns: 80px 1fr;
+    height: 80px;
 
     .navbar-container__hamburger {
       display: none;
