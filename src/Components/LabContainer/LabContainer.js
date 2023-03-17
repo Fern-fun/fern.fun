@@ -75,13 +75,3 @@ function LabContainer() {
 }
 
 export default LabContainer;
-
-{
-  /* <a
-  {...(lab.href !== "" ? { href: lab.href } : {})}
-  {...(lab.href !== "" ? { target: "_blank" } : {})}
-  {...(lab.href !== "" ? { rel: "noreferrer" } : {})}
->
-  <img src="/img/github.svg" alt="github" />
-</a>; */
-}

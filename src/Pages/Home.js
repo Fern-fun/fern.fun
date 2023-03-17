@@ -21,7 +21,7 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/img/github.svg" width={24} />
+                <img src="/img/github.svg" alt="github" width={24} />
               </a>
             </div>
           </div>

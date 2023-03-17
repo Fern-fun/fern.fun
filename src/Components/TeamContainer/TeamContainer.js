@@ -41,12 +41,12 @@ function TeamContainer() {
               <div className="team-container__team__social">
                 {team.github ? (
                   <a href={team.github} target="_blank" rel="noreferrer">
-                    <img src="/img/github.svg" width={28} />
+                    <img src="/img/github.svg" alt="github" width={28} />
                   </a>
                 ) : null}
                 {team.linkedin ? (
                   <a href={team.linkedin} target="_blank" rel="noreferrer">
-                    <img src="/img/linkedin.png" width={32} />
+                    <img src="/img/linkedin.png" alt="linkedin" width={32} />
                   </a>
                 ) : null}
               </div>
