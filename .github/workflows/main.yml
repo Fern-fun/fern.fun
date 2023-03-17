@@ -13,13 +13,13 @@ jobs:
         with:
           persist-credentials: false
       - name: Install
-        working-directory: ./frontend
+        working-directory: ./
         run: npm install
       - name: Build Webapp
-        working-directory: ./frontend
+        working-directory: ./
         run:  npm run build
       - name: Move build
-        run: sudo mv ./frontend/build ./
+        run: sudo mv ./build ./
       - name: List /build
         run: ls ./build
       - name: Deploy app
