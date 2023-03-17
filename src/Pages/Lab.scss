@@ -41,6 +41,7 @@ a {
 
     border-radius: 5px;
     background-color: #323232;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 1rem;
 
     width: 400px;
@@ -159,56 +160,67 @@ a {
           margin: 0.5rem 0.5rem;
         }
       }
-
-      .react {
-        color: #61dafb;
-        background-color: #282c34;
-      }
-
-      .javascript {
-        color: #282c34;
-        background-color: #f0db4f;
-      }
-
-      .c {
-        color: #282c34;
-        background-color: #a8b9cc;
-      }
-
-      .c-plus-plus {
-        color: #282c34;
-        background-color: #00599c;
-      }
-
-      .c-sharp {
-        color: #282c34;
-        background-color: #239120;
-      }
-
-      .python {
-        color: #f8dd5b;
-        background-color: #3a76a7;
-      }
-
-      .rust {
-        color: #282c34;
-        background-color: #dea584;
-      }
-
-      .typescript {
-        color: #fff;
-        background-color: #3178c6;
-      }
-
-      .polish {
-        color: #fff;
-        background-color: #a34646;
-      }
-
-      .english {
-        color: #fff;
-        background-color: #4649a3;
-      }
     }
   }
+}
+
+.tag {
+  border-radius: 4px;
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
+
+.react {
+  color: #61dafb;
+  background-color: #282c34;
+}
+
+.javascript {
+  color: #282c34;
+  background-color: #f0db4f;
+}
+
+.c {
+  color: #282c34;
+  background-color: #a8b9cc;
+}
+
+.c-plus-plus {
+  color: #fff;
+  background-color: #00599c;
+}
+
+.c-sharp {
+  color: #fff;
+  background-color: #239120;
+}
+
+.python {
+  color: #f8dd5b;
+  background-color: #3a76a7;
+}
+
+.rust {
+  color: #282c34;
+  background-color: #dea584;
+}
+
+.typescript {
+  color: #fff;
+  background-color: #3178c6;
+}
+
+.java {
+  color: #f8981d;
+  background-color: #5484a4;
+}
+
+.polish {
+  color: #fff;
+  background-color: #a34646;
+}
+
+.english {
+  color: #fff;
+  background-color: #4649a3;
 }
