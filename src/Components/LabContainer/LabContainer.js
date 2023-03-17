@@ -11,7 +11,7 @@ function LabContainer() {
       setLabElements((lab_elements) => [
         ...lab_elements,
 
-        <div className="lab-element" key={lab.id}>
+        <div className="lab-element" key={lab.title}>
           <div className="lab-container__img">
             {lab.isPrivate ? (
               <div className="lab-container__img-private">

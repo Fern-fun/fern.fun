@@ -1,6 +1,5 @@
 export const labs = [
   {
-    id: "6",
     title: "elektronhack",
     description:
       "Our project involves organizing a hackathon event that brings together developers, designers, and entrepreneurs to collaborate on building innovative solutions within a limited time frame.",
@@ -20,7 +19,6 @@ export const labs = [
     tags: ["react", "polish"],
   },
   {
-    id: "4",
     title: "tools.fern.fun",
     description:
       "The project aims to develop web development tools that assist programmers in creating websites efficiently and with ease",
@@ -36,7 +34,6 @@ export const labs = [
     tags: ["react", "english"],
   },
   {
-    id: "5",
     title: "ssh-alert",
     description:
       "ssh alert is a simple tool to alert you when someone is trying to login to your server via ssh.",
@@ -52,7 +49,6 @@ export const labs = [
     tags: ["rust", "english"],
   },
   {
-    id: "2",
     title: "cloud.fern.fun",
     description:
       "Cloud storage project is a platform for storing and accessing data over the internet, providing users with scalable and secure storage infrastructure.",
@@ -68,7 +64,6 @@ export const labs = [
     tags: ["react", "typescript", "english"],
   },
   {
-    id: "3",
     title: "game.fern.fun",
     description:
       "The guessing game project involves identifying the correct flag from a set of options. Players are challenged to test their knowledge and recognition of various flags from around the world.",
@@ -84,7 +79,6 @@ export const labs = [
     tags: ["react", "english"],
   },
   {
-    id: "1",
     title: "api.fern.fun",
     description:
       "This API project is designed to provide a backend service for a web or mobile application. It allows users to create, read, update, and delete data through RESTful endpoints.",
@@ -100,7 +94,6 @@ export const labs = [
     tags: ["python", "english"],
   },
   {
-    id: "0",
     title: "pi.fern.fun",
     description:
       "Server dashboard project is a web application that provides an overview of server status, system health metrics, and logs in real-time.",
