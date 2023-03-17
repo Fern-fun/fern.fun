@@ -1,4 +1,8 @@
-@use "variables";
+@use "./var.scss" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+@import url("./anim.scss");
 
 * {
   margin: 0;
@@ -7,60 +11,37 @@
 }
 
 body {
-  background: variables.$background;
+  font-family: "Fira Code", monospace;
+
+  background: rgb(41, 41, 41);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(36, 36, 37, 1) 19%,
+    rgba(30, 30, 33, 1) 39%
+  );
+  background-attachment: fixed; /*edit*/
+
+  color: $body-color;
+  overflow-x: hidden;
 }
 
-.blackhole {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 10em;
-  height: 10em;
-  /* background-color: red; */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.blackhole .megna {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background: linear-gradient(#ff4500, #ff4500, #ff9900);
-  /* box-shadow: 0 0 60px 30px rgba(255, 175, 83, 0.7); */
-  box-shadow: 0 0 60px 30px #fcbd3e, /* inner white */ 0 0 100px 60px #fd7a4d,
-    /* middle magenta */ 0 0 140px 90px #ff0b6b; /* outer cyan */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: blur(5px);
+/* Track */
+::-webkit-scrollbar-track {
+  background: $body-bg-color;
 }
 
-.blackhole .black {
-  width: 90%;
-  height: 90%;
-  border-radius: 45% 50% 50% 50%;
-  background-color: black;
-  transform: rotate(0deg);
-  animation: hole 0.1s linear infinite normal;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $fern-color;
 }
 
-@keyframes hole {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.vis {
-  @media screen and (max-width: variables.$minWidthMedia) {
-    visibility: hidden;
-  }
-  float: right;
-  cursor: pointer;
-  margin: 15px;
-  opacity: 0.5;
-
-  transition: opacity 0.5s ease-in-out;
-  &:hover {
-    opacity: 1;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $fern-color;
 }

@@ -1,20 +1,20 @@
 {
-  "short_name": "Fern.fun",
-  "name": "Fern.fun",
+  "short_name": "fern.fun",
+  "name": "",
   "icons": [
     {
-      "src": "/img/fern.fun.png",
-      "type": "image/png",
-      "sizes": "400x400"
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     },
     {
-      "src": "/img/fern.fun.ico",
-      "type": "image/ico",
-      "sizes": "400x400"
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#25262f"
+  "background_color": "#282828"
 }
