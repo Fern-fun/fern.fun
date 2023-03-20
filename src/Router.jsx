@@ -5,14 +5,9 @@ import Home from "./Pages/Home";
 import LabPage from "./Pages/LabPage";
 import About from "./Pages/About";
 
-import { Helmet } from "react-helmet";
-
 function Router() {
   return (
     <BrowserRouter>
-      <Helmet>
-        <title>Fern.fun</title>
-      </Helmet>
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
