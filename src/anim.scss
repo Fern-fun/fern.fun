@@ -1,4 +1,4 @@
-// Fade in from left
+/* Fade in from left */
 .fadeInFromLeft {
   animation: fadeInFromLeft 1s ease-in-out;
 }
@@ -14,7 +14,7 @@
   }
 }
 
-// Fade in from bottom
+/* Fade in from bottom */
 .fadeInFromBottom {
   animation: fadeInFromBottom 1s ease-in-out;
 }
@@ -30,7 +30,7 @@
   }
 }
 
-// Smooth show
+/* Smooth show */
 .smoothShow {
   animation: smoothShow 1s ease-in-out;
 }
@@ -44,7 +44,7 @@
   }
 }
 
-// Breathing animation
+/* Breathing animation */
 .breathing {
   animation: breathing 4s ease-in-out infinite;
 }

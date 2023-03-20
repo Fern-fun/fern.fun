@@ -18,8 +18,8 @@ jobs:
       - name: Build Webapp
         working-directory: ./
         run:  npm run build
-      - name: List /build
-        run: ls ./build
+      - name: List /dist
+        run: ls ./dist
       - name: Deploy app
         uses: milanmk/actions-file-deployer@master
         with:
@@ -30,4 +30,4 @@ jobs:
           ssh-private-key: ${{ secrets.SFTP_PRIVATE_KEY }} 
           remote-path: "/fern/web/fern/"
           sync: "full"
-          local-path: "build/"
+          local-path: "dist/"
