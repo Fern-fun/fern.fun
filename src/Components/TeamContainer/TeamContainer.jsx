@@ -17,11 +17,23 @@ function TeamContainer() {
       <div className="team-container__content">
         {teams.map((team, index) => {
           return (
-            <div className="team-container__team" key={index}>
+            <div className="team-container__team hoverScale" key={index}>
               <div className="team-container__team__title">
-                <div className="team-container__team__avatar">
-                  <img src={team.avatar} alt={team.name} />
-                </div>
+                {team.owner !== undefined ? (
+                  <div className="team-container__team__owner-avatar">
+                    <img
+                      src="/img/owner.svg"
+                      alt="owner"
+                      width={24}
+                      id="crown"
+                    />
+                    <img src={team.avatar} alt={team.name} id="avatar" />
+                  </div>
+                ) : (
+                  <div className="team-container__team__avatar">
+                    <img src={team.avatar} alt={team.name} />
+                  </div>
+                )}
                 <div>
                   <div className="team-container__team__username">
                     {team.username}

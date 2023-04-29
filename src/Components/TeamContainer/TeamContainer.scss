@@ -61,6 +61,52 @@
     }
   }
 
+  .team-container__team__owner-avatar {
+    position: relative;
+
+    width: fit-content;
+
+    @media screen and (min-width: $mobile-width) {
+      margin: 1rem;
+      padding: 1rem;
+
+      margin-top: 1rem;
+
+      #crown {
+        position: absolute;
+        bottom: 85%;
+        right: -73%;
+
+        width: 30px;
+
+        transform: translate(50%, 50%);
+      }
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      margin-top: 2rem;
+
+      #crown {
+        position: absolute;
+        bottom: -10%;
+        right: 50%;
+
+        width: 22px;
+
+        transform: translate(50%, 50%);
+      }
+    }
+
+    #avatar {
+      width: 100px;
+      height: 100px;
+
+      border-radius: 50%;
+
+      z-index: -1000;
+    }
+  }
+
   .team-container__team__title {
     display: flex;
     justify-content: center;
