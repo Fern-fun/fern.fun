@@ -1,6 +1,10 @@
 import React from "react";
-import "./Home.scss";
 import { InlineText } from "../Components/Paragraph/Paragraph";
+
+import "./Home.scss";
+
+import githubLogo from "../assets/github.svg";
+import logo from "../assets/logo.png";
 
 function Home() {
   return (
@@ -21,13 +25,13 @@ function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/img/github.svg" alt="github" width={24} />
+                <img src={githubLogo} alt="github" width={24} />
               </a>
             </div>
           </div>
         </div>
         <div className="box__image">
-          <img src="logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
       </div>
     </div>

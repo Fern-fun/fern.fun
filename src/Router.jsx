@@ -10,9 +10,9 @@ function Router() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/lab" element={<LabPage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Home />} />
+        <Route path="/fern.fun/lab" element={<LabPage />} />
+        <Route path="/fern.fun/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

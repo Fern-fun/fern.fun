@@ -3,6 +3,8 @@ import React from "react";
 import { labs } from "./Labs";
 import { InlineText } from "../Paragraph/Paragraph";
 
+import lockIcon from "../../assets/lock.svg";
+
 function LabContainer() {
   const [lab_elements, setLabElements] = React.useState([]);
 
@@ -15,7 +17,7 @@ function LabContainer() {
           <div className="lab-container__img">
             {lab.isPrivate ? (
               <div className="lab-container__img-private">
-                <img src="/img/lock.svg" alt="lock" />
+                <img src={lockIcon} alt="lock" />
               </div>
             ) : null}
             <img src={lab.img} alt="lab" />

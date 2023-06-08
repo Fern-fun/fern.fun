@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.scss";
 
+import logo from "../../assets/logo.png";
+
 function Navbar() {
   const [hamburger, setHamburger] = React.useState(false);
 
@@ -12,7 +14,7 @@ function Navbar() {
     <div className="navbar-container">
       <div className="navbar-container__logo">
         <a href="/">
-          <img src="/logo.png" alt="Fern Logo" />
+          <img src={logo} alt="Fern Logo" />
         </a>
       </div>
       <div className="navbar-container__hamburger">
@@ -34,7 +36,7 @@ function Navbar() {
         style={hamburger ? { display: "block" } : null}
       >
         <a
-          href="/"
+          href="/fern.fun/"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="home">
@@ -43,7 +45,7 @@ function Navbar() {
         </a>
 
         <a
-          href="/lab"
+          href="/fern.fun/lab"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="lab">
@@ -52,7 +54,7 @@ function Navbar() {
         </a>
 
         <a
-          href="/about"
+          href="/fern.fun/about"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="comp">

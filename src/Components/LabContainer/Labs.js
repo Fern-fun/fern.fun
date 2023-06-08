@@ -1,3 +1,11 @@
+import apiFernFun from "../../assets/api.fern.fun.jpg";
+import elektronhack from "../../assets/elektronhack.jpg";
+import toolsFernFun from "../../assets/tools.fern.fun.jpg";
+import sshAlert from "../../assets/ssh-alert.jpg";
+import cloudFernFun from "../../assets/cloud.fern.fun.jpg";
+import gameFernFun from "../../assets/game.fern.fun.jpg";
+import piFernFun from "../../assets/pi.fern.fun.jpg";
+
 export const labs = [
   {
     title: "elektronhack",
@@ -14,7 +22,7 @@ export const labs = [
       },
     ],
     isPrivate: false,
-    img: "/img/elektronhack.jpg",
+    img: elektronhack,
     href: "https://zse.edu.pl/elektronhack/",
     tags: ["react", "polish"],
   },
@@ -29,7 +37,7 @@ export const labs = [
       },
     ],
     isPrivate: false,
-    img: "/img/tools.fern.fun.jpg",
+    img: toolsFernFun,
     href: "https://tools.fern.fun/",
     tags: ["react", "english"],
   },
@@ -44,7 +52,7 @@ export const labs = [
       },
     ],
     isPrivate: false,
-    img: "/img/ssh-alert.jpg",
+    img: sshAlert,
     href: "https://github.com/MrJacob12/ssh-alert",
     tags: ["rust", "english"],
   },
@@ -59,7 +67,7 @@ export const labs = [
       },
     ],
     isPrivate: true,
-    img: "/img/cloud.fern.fun.jpg",
+    img: cloudFernFun,
     href: "",
     tags: ["react", "typescript", "english"],
   },
@@ -74,7 +82,7 @@ export const labs = [
       },
     ],
     isPrivate: false,
-    img: "/img/game.fern.fun.jpg",
+    img: gameFernFun,
     href: "https://game.fern.fun/",
     tags: ["react", "english"],
   },
@@ -89,7 +97,7 @@ export const labs = [
       },
     ],
     isPrivate: true,
-    img: "/img/api.fern.fun.jpg",
+    img: apiFernFun,
     href: "https://api.fern.fun/",
     tags: ["python", "english"],
   },
@@ -104,7 +112,7 @@ export const labs = [
       },
     ],
     isPrivate: false,
-    img: "/img/pi.fern.fun.jpg",
+    img: piFernFun,
     href: "https://pi.fern.fun/",
     tags: ["react", "english"],
   },
