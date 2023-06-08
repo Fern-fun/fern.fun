@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Navbar.scss";
 
 import logo from "../../assets/logo.png";
@@ -13,9 +15,9 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div className="navbar-container__logo">
-        <a href="/">
+        <Link href="/">
           <img src={logo} alt="Fern Logo" />
-        </a>
+        </Link>
       </div>
       <div className="navbar-container__hamburger">
         <button
@@ -35,32 +37,32 @@ function Navbar() {
         className="navbar-container__box"
         style={hamburger ? { display: "block" } : null}
       >
-        <a
-          href="/fern.fun/"
+        <Link
+          to="/fern.fun/"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="home">
             <span>Home</span>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="/fern.fun/lab"
+        <Link
+          to="/fern.fun/lab"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="lab">
             <span>Lab</span>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="/fern.fun/about"
+        <Link
+          to="/fern.fun/about"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="comp">
             <span>About us</span>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
