@@ -2,7 +2,7 @@
   "name": "fern.fun",
   "private": false,
   "version": "6.3.0",
-  "homepag": "https://fern-fun.github.io/fern.fun/",
+  "homepag": "https://fern.fun/",
   "type": "module",
   "scripts": {
     "dev": "vite",
