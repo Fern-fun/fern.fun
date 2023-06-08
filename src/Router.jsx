@@ -10,7 +10,7 @@ function Router() {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/fern.fun/" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/fern.fun/lab" element={<LabPage />} />
         <Route path="/fern.fun/about" element={<About />} />
       </Routes>
