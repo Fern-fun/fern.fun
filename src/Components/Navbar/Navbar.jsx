@@ -38,7 +38,7 @@ function Navbar() {
         style={hamburger ? { display: "block" } : null}
       >
         <Link
-          to="/fern.fun/"
+          to="/"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="home">
@@ -47,7 +47,7 @@ function Navbar() {
         </Link>
 
         <Link
-          to="/fern.fun/lab"
+          to="/lab"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="lab">
@@ -56,7 +56,7 @@ function Navbar() {
         </Link>
 
         <Link
-          to="/fern.fun/about"
+          to="/about"
           onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
         >
           <div className="comp">

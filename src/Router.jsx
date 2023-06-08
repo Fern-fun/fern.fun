@@ -11,8 +11,8 @@ function Router() {
       <Navbar />
       <Routes>
         <Route path="*" element={<Home />} />
-        <Route path="/fern.fun/lab" element={<LabPage />} />
-        <Route path="/fern.fun/about" element={<About />} />
+        <Route path="/lab" element={<LabPage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </HashRouter>
   );
