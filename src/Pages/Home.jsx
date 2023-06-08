@@ -1,5 +1,6 @@
 import React from "react";
 import { InlineText } from "../Components/Paragraph/Paragraph";
+import { Helmet } from "react-helmet";
 
 import "./Home.scss";
 
@@ -10,15 +11,25 @@ function Home() {
   return (
     <div className="page-container">
       <div className="box-image fadeInFromLeft">
+        <Helmet>
+          <title>Home</title>
+        </Helmet>
         <div>
           <div className="box__title breathing">
             We <span className="fern-text">craft</span> engageing webpages.
           </div>
           <div className="box__content">
-            <InlineText>
-              Web development team crafting stunning online experiences that
-              engage and inspire.
-            </InlineText>
+            <div>
+              <InlineText>
+                Web development team crafting stunning online experiences that
+                engage and inspire.
+              </InlineText>
+              <a href="mailto:jakub.buciuto@gmail.com" class="fern-text">
+                {" "}
+                Contact us
+              </a>
+            </div>
+
             <div className="box__content__media">
               <a
                 href="https://github.com/Fern-fun"
