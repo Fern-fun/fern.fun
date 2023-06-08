@@ -2,7 +2,7 @@
   "name": "fern.fun",
   "private": false,
   "version": "6.3.0",
-  "homepag": "https://fern.fun/",
+  "homepag": "/",
   "type": "module",
   "scripts": {
     "dev": "vite",
