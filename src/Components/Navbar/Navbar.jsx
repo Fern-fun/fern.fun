@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <div className="navbar-container__logo">
-        <Link href="/">
+        <Link to="/">
           <img src={logo} alt="Fern Logo" />
         </Link>
       </div>
