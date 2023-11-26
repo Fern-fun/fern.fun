@@ -8,13 +8,13 @@
   justify-content: center;
   text-align: center;
 
-  .page-box__title {
+  &__title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
 
-  .page-box__content {
+  &__content {
     font-size: 0.75rem;
     opacity: 0.8;
     margin-bottom: 1rem;
@@ -37,7 +37,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     border-radius: 5px;
     background-color: #323232;
@@ -45,14 +45,14 @@ a {
     margin: 1rem;
 
     width: 400px;
+    height: 680px;
 
-    .lab-container__img {
+    &__img {
       width: 100%;
       height: 200px;
-
       position: relative;
 
-      .lab-container__img-private {
+      &-private {
         position: absolute;
         top: 0;
         left: 0;
@@ -66,8 +66,8 @@ a {
         justify-content: center;
 
         img {
-          width: 50px;
-          height: 50px;
+          width: 50px !important;
+          height: 50px !important;
         }
       }
 
@@ -79,12 +79,9 @@ a {
       }
     }
 
-    .lab-container__title {
+    &__title {
       width: 100%;
       height: 250px;
-
-      display: grid;
-      grid-template-rows: 60% 20% 20%;
 
       div:first-child {
         text-align: center;
@@ -93,6 +90,10 @@ a {
           font-size: 1.5rem;
           font-weight: 700;
           margin: 1rem 0;
+
+          a {
+            color: rgba($color: $fern-color, $alpha: 0.75);
+          }
         }
 
         div:last-child {
@@ -108,9 +109,10 @@ a {
       }
     }
 
-    .lab-container__content {
+    &__content {
       width: 100%;
-      .lab-container__content__tags {
+
+      &__tags {
         font-size: 0.75rem;
         text-align: left;
         display: flex;
@@ -119,6 +121,7 @@ a {
         justify-content: flex-start;
 
         padding: 1rem;
+
         span {
           border-radius: 4px;
           padding: 0.2rem;
@@ -126,7 +129,9 @@ a {
         }
       }
 
-      .lab-container__content__author {
+      &__author {
+        height: 100px;
+
         font-size: 0.75rem;
         text-align: left;
         display: flex;
@@ -144,22 +149,46 @@ a {
 
           align-items: center;
           justify-content: center;
+
           img {
             width: 24px;
             height: 24px;
-            margin-right: 0.5rem;
+            margin-right: 0.1rem;
             border-radius: 50%;
           }
 
           span {
             border-radius: 4px;
-            padding: 0.2rem;
-            margin-right: 0.5rem;
+            padding: 0.3rem;
+            margin-right: 0.3rem;
           }
 
-          margin: 0.5rem 0.5rem;
+          margin: 0.2rem 0.2rem;
         }
       }
+
+      &__github {
+        img {
+          width: 24px;
+          height: 24px;
+          margin: 1rem;
+        }
+      }
+    }
+
+    &__element {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      border-radius: 5px;
+      background-color: #323232;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+
+      width: 400px;
+      height: 618px;
     }
   }
 }

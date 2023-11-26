@@ -10,11 +10,11 @@
     grid-template-columns: 80px 1fr;
     height: 80px;
 
-    .navbar-container__hamburger {
+    &__hamburger {
       display: none;
     }
 
-    .navbar-container__logo {
+    &__logo {
       width: auto;
       margin: auto;
       padding: 5px;
@@ -26,7 +26,7 @@
       }
     }
 
-    .navbar-container__box {
+    &__box {
       display: grid;
       justify-content: flex-end;
       grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
@@ -40,7 +40,7 @@
         justify-items: center;
         align-items: center;
 
-        color: white;
+        color: $navbar-color;
         text-decoration: none;
 
         div {
@@ -90,7 +90,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    .navbar-container__logo {
+    &__logo {
       width: 100%;
       display: flex;
       justify-content: flex-start;
@@ -102,22 +102,18 @@
       }
     }
 
-    .navbar-container__hamburger {
+    &__hamburger {
       width: 100%;
       display: flex;
       justify-content: flex-end;
-
-      button:hover {
-        background-color: $navbar-bg-color;
-      }
     }
 
-    .navbar-container__box {
+    &__box {
       display: none;
       font-size: 1.1rem;
 
       a {
-        color: white;
+        color: $navbar-color;
         text-decoration: none;
 
         div {

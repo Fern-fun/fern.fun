@@ -1,9 +1,11 @@
 import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Pages/Home";
-import LabPage from "./Pages/LabPage";
-import About from "./Pages/About";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home";
+import LabPage from "./pages/LabPage";
+import About from "./pages/About";
+
+import Footer from "./components/Footer/Footer";
 
 function Router() {
   return (
@@ -14,6 +16,7 @@ function Router() {
         <Route path="/lab" element={<LabPage />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </HashRouter>
   );
 }

@@ -1,9 +1,10 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 
 import "./Lab.scss";
-const LabContainer = React.lazy(() =>
-  import("../Components/LabContainer/LabContainer")
+
+const LabContainer = lazy(() =>
+  import("../components/LabContainer/LabContainer")
 );
 
 function LabPage() {
@@ -19,7 +20,7 @@ function LabPage() {
       <Suspense
         fallback={
           <div className="loader-container">
-            <span class="loader"></span>
+            <span className="loader"></span>
           </div>
         }
       >

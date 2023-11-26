@@ -2,132 +2,130 @@
 
 .page-container {
   margin: 5rem 0;
-}
 
-@media screen and (min-width: $mobile-width) {
-  .box-image {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    .box__image {
+  @media screen and (min-width: $mobile-width) {
+    .box-image {
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
 
-      img {
-        width: 50%;
+      .box__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+
+      &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        max-width: 450px;
+      }
+
+      &__content {
+        font-size: 0.8rem;
+        width: 400px;
+
+        &__media {
+          margin: 1rem;
+        }
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__title {
+          font-size: 1.6rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          width: fit-content;
+          margin: 1rem;
+        }
+
+        &__content {
+          text-align: left;
+          max-width: 600px;
+        }
       }
     }
   }
 
-  .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-  }
+  @media screen and (max-width: $mobile-width) {
+    .box-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
 
-  .box__title {
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    max-width: 450px;
-  }
+      .box__image {
+        margin: 1rem;
+        padding: 0.5rem;
 
-  .box__content {
-    font-size: 0.8rem;
-    width: 400px;
-
-    .box__content__media {
-      margin: 1rem;
+        img {
+          width: 80%;
+          padding: 1rem;
+        }
+      }
     }
-  }
 
-  .box-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .box-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    .box-text__title {
-      font-size: 1.6rem;
+      &__title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: 1rem;
+      }
+
+      &__content {
+        padding: 1rem;
+        text-align: left;
+        max-width: 600px;
+      }
+    }
+
+    .box__title {
+      font-size: 1.5rem;
       font-weight: 600;
       text-transform: uppercase;
-      width: fit-content;
-      margin: 1rem;
-    }
-
-    .box-text__content {
-      text-align: left;
-      max-width: 600px;
-    }
-  }
-}
-
-@media screen and (max-width: $mobile-width) {
-  .box-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-
-    .box__image {
       margin: 1rem;
       padding: 0.5rem;
-      img {
-        width: 80%;
-        padding: 1rem;
+    }
+
+    .box__content {
+      font-size: 0.8rem;
+      width: auto;
+      margin: 1rem;
+      padding: 0.5rem;
+
+      .box__content__media {
+        margin: 1rem;
       }
-    }
-  }
-
-  .box-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .box-text__title {
-      font-size: 1.6rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      width: fit-content;
-      margin: 1rem;
-    }
-
-    .box-text__content {
-      padding: 1rem;
-      text-align: left;
-      max-width: 600px;
-    }
-  }
-
-  .box__title {
-    font-size: 1.5rem;
-
-    font-weight: 600;
-    text-transform: uppercase;
-
-    margin: 1rem;
-    padding: 0.5rem;
-  }
-
-  .box__content {
-    font-size: 0.8rem;
-    width: auto;
-
-    margin: 1rem;
-    padding: 0.5rem;
-
-    .box__content__media {
-      margin: 1rem;
     }
   }
 }

@@ -1,3 +1,4 @@
+// Import images when needed
 import apiFernFun from "../../assets/api.fern.fun.jpg";
 import elektronhack from "../../assets/elektronhack.jpg";
 import toolsFernFun from "../../assets/tools.fern.fun.jpg";
@@ -7,6 +8,22 @@ import gameFernFun from "../../assets/game.fern.fun.jpg";
 import piFernFun from "../../assets/pi.fern.fun.jpg";
 
 export const labs = [
+  {
+    title: "game.fern.fun",
+    description:
+      "The guessing game project involves identifying the correct flag from a set of options. Players are challenged to test their knowledge and recognition of various flags from around the world.",
+    author: [
+      {
+        name: "MrJacob12",
+        icon: "https://avatars.githubusercontent.com/u/46843555?v=4",
+      },
+    ],
+    isPrivate: false,
+    img: gameFernFun,
+    github: "https://github.com/Fern-fun/game.fern.fun",
+    href: "https://game.fern.fun/",
+    tags: ["react", "english"],
+  },
   {
     title: "elektronhack",
     description:
@@ -23,6 +40,7 @@ export const labs = [
     ],
     isPrivate: false,
     img: elektronhack,
+    github: "https://github.com/QQLKAA/elektronhack-landing",
     href: "https://zse.edu.pl/elektronhack/",
     tags: ["react", "polish"],
   },
@@ -38,6 +56,7 @@ export const labs = [
     ],
     isPrivate: false,
     img: toolsFernFun,
+    github: "https://github.com/Fern-fun/tools.fern.fun",
     href: "https://tools.fern.fun/",
     tags: ["react", "english"],
   },
@@ -54,6 +73,7 @@ export const labs = [
     isPrivate: false,
     img: sshAlert,
     href: "https://github.com/MrJacob12/ssh-alert",
+    github: "https://github.com/MrJacob12/ssh-alert",
     tags: ["rust", "english"],
   },
   {
@@ -68,23 +88,9 @@ export const labs = [
     ],
     isPrivate: true,
     img: cloudFernFun,
+    github: "https://github.com/Fern-fun/cloud.fern.fun",
     href: "",
     tags: ["react", "typescript", "english"],
-  },
-  {
-    title: "game.fern.fun",
-    description:
-      "The guessing game project involves identifying the correct flag from a set of options. Players are challenged to test their knowledge and recognition of various flags from around the world.",
-    author: [
-      {
-        name: "MrJacob12",
-        icon: "https://avatars.githubusercontent.com/u/46843555?v=4",
-      },
-    ],
-    isPrivate: false,
-    img: gameFernFun,
-    href: "https://game.fern.fun/",
-    tags: ["react", "english"],
   },
   {
     title: "api.fern.fun",
@@ -98,6 +104,7 @@ export const labs = [
     ],
     isPrivate: true,
     img: apiFernFun,
+    github: "https://github.com/Fern-fun/api.fern.fun",
     href: "https://api.fern.fun/",
     tags: ["python", "english"],
   },
@@ -113,6 +120,7 @@ export const labs = [
     ],
     isPrivate: false,
     img: piFernFun,
+    github: "https://github.com/Fern-fun/pi.fern.fun",
     href: "https://pi.fern.fun/",
     tags: ["react", "english"],
   },

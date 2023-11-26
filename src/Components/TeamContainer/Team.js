@@ -16,20 +16,4 @@ export const teams = [
     avatar: "https://avatars.githubusercontent.com/u/27441333?v=4",
     tags: ["c", "c-plus-plus", "python", "react", "typescript"],
   },
-  {
-    name: "Kacper Kostera",
-    username: "Skimper",
-    github: "https://github.com/Skimper",
-    linkedin: "",
-    avatar: "https://avatars.githubusercontent.com/u/42150605?v=4",
-    tags: ["c-sharp", "java", "react", "typescript"],
-  },
-  {
-    name: "Marcel Bełtowski",
-    username: "mbeltowski",
-    github: "https://github.com/mbeltowski",
-    linkedin: "https://www.linkedin.com/in/marcel-be%C5%82towski-38ab9626a/",
-    avatar: "https://avatars.githubusercontent.com/u/49125323?v=4",
-    tags: ["typescript", "react", "lua"],
-  },
 ];

@@ -1,9 +1,9 @@
 import React from "react";
-
 import { labs } from "./Labs";
 import { InlineText } from "../Paragraph/Paragraph";
 
 import lockIcon from "../../assets/lock.svg";
+import githubIcon from "../../assets/github.svg";
 
 function LabContainer() {
   const [lab_elements, setLabElements] = React.useState([]);
@@ -14,15 +14,15 @@ function LabContainer() {
         ...lab_elements,
 
         <div className="lab-element hoverScale" key={lab.title}>
-          <div className="lab-container__img">
+          <div className="lab-element__img">
             {lab.isPrivate ? (
-              <div className="lab-container__img-private">
+              <div className="lab-element__img-private">
                 <img src={lockIcon} alt="lock" />
               </div>
             ) : null}
             <img src={lab.img} alt="lab" />
           </div>
-          <div className="lab-container__title">
+          <div className="lab-element__title">
             <div>
               <div>
                 {lab.href !== "" ? (
@@ -33,20 +33,20 @@ function LabContainer() {
                   lab.title
                 )}
               </div>
-              <div>
+              <div className="lab-element__title__description">
                 <InlineText>{lab.description}</InlineText>
               </div>
             </div>
           </div>
-          <div className="lab-container__content">
-            <div className="lab-container__content__tags">
+          <div className="lab-element__content">
+            <div className="lab-element__content__tags">
               {lab.tags.map((i) => (
                 <span key={i} className={i}>
                   #{i}
                 </span>
               ))}
             </div>
-            <div className="lab-container__content__author">
+            <div className="lab-element__content__author">
               {lab.author.map((i) => (
                 <a
                   href={`https://github.com/${i.name}`}
@@ -62,6 +62,14 @@ function LabContainer() {
                   </span>
                 </a>
               ))}
+            </div>
+
+            <div className="lab-element__content__github">
+              {lab.github !== "" ? (
+                <a href={lab.github} target={"_blank"}>
+                  <img src={githubIcon} alt="github" />
+                </a>
+              ) : null}
             </div>
           </div>
         </div>,

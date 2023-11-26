@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+build.bat
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
