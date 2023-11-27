@@ -9,7 +9,7 @@ import piFernFun from "../../assets/pi.fern.fun.jpg";
 
 export const labs = [
   {
-    title: "game.fern.fun",
+    title: "games.fern.fun",
     description:
       "The guessing game project involves identifying the correct flag from a set of options. Players are challenged to test their knowledge and recognition of various flags from around the world.",
     author: [
@@ -20,8 +20,8 @@ export const labs = [
     ],
     isPrivate: false,
     img: gameFernFun,
-    github: "https://github.com/Fern-fun/game.fern.fun",
-    href: "https://game.fern.fun/",
+    github: "https://github.com/Fern-fun/games.fern.fun",
+    href: "https://games.fern.fun/",
     tags: ["react", "english"],
   },
   {
