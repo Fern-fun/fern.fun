@@ -9,10 +9,10 @@ import logo from "../assets/logo.png";
 
 const Home = () => (
   <div className="page-container">
+    <Helmet>
+      <title>Home</title>
+    </Helmet>
     <div className="box-image fadeInFromLeft">
-      <Helmet>
-        <title>Home</title>
-      </Helmet>
       <div>
         <div className="box__title breathing">
           We <span className="fern-text">craft</span> engaging webpages.
