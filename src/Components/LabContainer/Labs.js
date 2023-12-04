@@ -9,6 +9,22 @@ import piFernFun from "../../assets/pi.fern.fun.jpg";
 
 export const labs = [
   {
+    title: "apiv2.fern.fun",
+    description:
+      "This API project is designed to provide a backend service for a web or mobile application. It allows users to create, read, update, and delete data through RESTful endpoints.",
+    author: [
+      {
+        name: "MrJacob12",
+        icon: "https://avatars.githubusercontent.com/u/46843555?v=4",
+      },
+    ],
+    isPrivate: true,
+    img: apiFernFun,
+    github: "https://github.com/Fern-fun/api.fern.fun",
+    href: "https://apiv2.fern.fun/",
+    tags: ["python", "english"],
+  },
+  {
     title: "games.fern.fun",
     description:
       "The guessing game project involves identifying the correct flag from a set of options. Players are challenged to test their knowledge and recognition of various flags from around the world.",
@@ -91,22 +107,6 @@ export const labs = [
     github: "https://github.com/Fern-fun/cloud.fern.fun",
     href: "",
     tags: ["react", "typescript", "english"],
-  },
-  {
-    title: "api.fern.fun",
-    description:
-      "This API project is designed to provide a backend service for a web or mobile application. It allows users to create, read, update, and delete data through RESTful endpoints.",
-    author: [
-      {
-        name: "MrJacob12",
-        icon: "https://avatars.githubusercontent.com/u/46843555?v=4",
-      },
-    ],
-    isPrivate: true,
-    img: apiFernFun,
-    github: "https://github.com/Fern-fun/api.fern.fun",
-    href: "https://api.fern.fun/",
-    tags: ["python", "english"],
   },
   {
     title: "pi.fern.fun",
