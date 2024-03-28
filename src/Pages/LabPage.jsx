@@ -21,7 +21,7 @@ function LabPage() {
           <a href="http://erkomputer.pl/lab/" className="link" target="_blank">
             here
           </a>{" "}
-          (only polish {"☹️"} for now)
+          (only in polish {"☹️"} for now)
         </div>
       </div>
       <Suspense
