@@ -63,6 +63,15 @@ function Navbar() {
             <span>About us</span>
           </div>
         </Link>
+
+        <a
+          href="https://fern.fun/blog.fern.fun/"
+          onClick={(e) => (hamburger ? setHamburger((a) => !a) : null)}
+        >
+          <div className="comp">
+            <span>Blog</span>
+          </div>
+        </a>
       </div>
     </div>
   );

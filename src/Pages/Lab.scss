@@ -18,12 +18,21 @@
     font-size: 0.75rem;
     opacity: 0.8;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: $mobile-width) {
+      width: 95%;
+    }
   }
 }
 
 a {
   color: #fff;
   text-decoration: none;
+
+  &.link {
+    font-size: 1.1rem;
+    color: $navbar-hover-color;
+  }
 }
 
 .lab-container {

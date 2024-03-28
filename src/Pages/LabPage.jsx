@@ -15,7 +15,14 @@ function LabPage() {
       </Helmet>
       <div className="page-box">
         <div className="page-box__title">LAB</div>
-        <div className="page-box__content">projects and components :D</div>
+        <div className="page-box__content">
+          projects and components :D <br />
+          Projects for companies{" "}
+          <a href="http://erkomputer.pl/lab/" className="link" target="_blank">
+            here
+          </a>{" "}
+          (only polish {"☹️"} for now)
+        </div>
       </div>
       <Suspense
         fallback={
