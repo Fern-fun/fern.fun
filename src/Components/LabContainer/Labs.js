@@ -6,8 +6,25 @@ import sshAlert from "../../assets/ssh-alert.jpg";
 import cloudFernFun from "../../assets/cloud.fern.fun.jpg";
 import gameFernFun from "../../assets/game.fern.fun.jpg";
 import piFernFun from "../../assets/pi.fern.fun.jpg";
+import foodFernFun from "../../assets/food.fern.fun.png";
 
 export const labs = [
+  {
+    title: "food.fern.fun",
+    description:
+      "Recipe page project is a web application that provides users with a collection of recipes to explore and try out. Users can search for recipes based on tags and titles",
+    author: [
+      {
+        name: "MrJacob12",
+        icon: "https://avatars.githubusercontent.com/u/46843555?v=4",
+      },
+    ],
+    isPrivate: false,
+    img: foodFernFun,
+    github: "https://github.com/Fern-fun/food.fern.fun",
+    href: "https://food.fern.fun/",
+    tags: ["react", "typescript", "polish"],
+  },
   {
     title: "apiv2.fern.fun",
     description:
